@@ -9,9 +9,9 @@ var dbconfig = {
     production: {
         host     : 'localhost',
         port     : '3306',
-        user     : 'dbuser',
-        password : 'P@ssw0rd@2023',
-        database : 'term_user'
+        user     : 'dbuser66',
+        password : 'P@ssw0rd',
+        database : 'user66004_db'
     }
     };
 module.exports = dbconfig;
