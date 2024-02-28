@@ -13,7 +13,7 @@ const login = async (req, res = response) => {
     database: config.database
   }
   );
-  const QUERY = `SELECT * FROM users WHERE email = '${email}'`;
+  const QUERY = `SELECT * FROM Users WHERE email = '${email}'`;
 
   // Ideally search the user in a database,
   // throw an error if not found.
