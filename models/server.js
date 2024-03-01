@@ -9,6 +9,7 @@ class Server {
     this.paths = {
       auth: "/api/auth",
       homepage: "/api/homepage",
+      adduser: "/api/adduser",
     };
 
     this.middlewares();
@@ -29,12 +30,13 @@ class Server {
   routes() {
     this.app.use(this.paths.auth, require("../routes/auth"));
     this.app.use(this.paths.homepage, require("../routes/homepage"));
+    this.app.use(this.paths.adduser, require("../routes/adduser"));
     // Catch all requests that don't match any route
-    this.app.get("*", (req, res) => {
-      res.sendFile(
-        path.join(__dirname, "../../client/build/index.html")
-      );
-    });
+    // this.app.get("*", (req, res) => {
+    //   res.sendFile(
+    //     path.join(__dirname, "../../client/build/index.html")
+    //   );
+    // });
   }
 
   listen() {
