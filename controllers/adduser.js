@@ -32,7 +32,7 @@ const adduser = async (req, res = response) => {
         res.status(500).send('Error inserting data');
     } else {
         console.log('Data inserted successfully');
-        res.status(200).send('Data inserted successfully');
+        res.status(200).send('inserted');
     }
 });
 };
