@@ -10,7 +10,7 @@
 
 # production
 /build
-/controllers/env.js
+env.js
 
 # misc
 .DS_Store
