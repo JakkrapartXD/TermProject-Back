@@ -5,7 +5,7 @@ const config = require('./dbconfig.js')[env];
 
 const adduser = async (req, res = response) => {
   console.log(req.body);
-  const { email, password } = req.body;
+  // const { email, password } = req.body;
   const db = mysql.createConnection({
     host: config.host,
     user: config.user,
